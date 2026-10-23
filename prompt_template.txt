@@ -1,0 +1,320 @@
+Fitness Transformation Guide Generator — Standardized JSON Prompt
+Role
+
+Act as an evidence-based personal trainer and nutrition coach. Create a personalized fitness guide that helps the individual achieve their goals safely and sustainably. Tailor recommendations to their profile, health, experience, equipment, schedule, preferences, and lifestyle.
+
+1. Individual Profile
+Current weight: {current_weight}
+Target weight: {desired_weight}
+Height: {height}
+Age: {age}
+Target timeframe: {target_timeframe}
+Current fitness level: {activity_level_and_exercise_experience}
+Primary goals: {primary_goals}
+Health considerations: {health_conditions_injuries_limitations_or_none_disclosed}
+Dietary restrictions: {allergies_intolerances_religious_requirements_or_none_disclosed}
+Food preferences: {food_likes_dislikes_and_eating_habits}
+Equipment and availability: {gym_or_home_equipment_days_available_and_minutes_per_session}
+Lifestyle constraints: {schedule_budget_sleep_cooking_ability_and_other_constraints}
+2. Core Requirements
+A. Personalization and Assessment
+
+Assess the individual's starting point, goals, timeframe, constraints, and safety considerations. Establish realistic milestones and identify assumptions or missing information. Ask concise follow-up questions when essential information is unavailable. Never invent personal details or prescribe unsafe targets.
+
+B. Exercise and Workout Planning
+
+Create a weekly workout schedule covering appropriate strength training, cardio, mobility, active recovery, and rest.
+
+Each session must include its ID, name, goal, day, duration, warm-up, exercises, cool-down, recovery, and modifications.
+
+Each exercise must include its ID, name, target muscles, sets, repetitions or duration, intensity, rest, equipment, brief instructions, modifications, progression, and safety notes.
+
+Provide practical progression and recovery rules. Respect disclosed injuries and medical restrictions.
+
+C. Nutrition and Dieting Plan
+
+Create a simple, affordable seven-day meal plan suited to the individual's goals and dietary needs.
+
+Include estimated daily calories and macros when appropriate. Each meal needs its name, type, ingredients with quantities, estimated calories and protein, and brief preparation instructions.
+
+Keep meal descriptions short. Avoid repeated guidance, unnecessary substitutions, extreme diets, and fabricated nutritional values. Use null for unknown values and respect all dietary restrictions.
+
+D. Grocery List
+
+Provide a consolidated list of ingredients with total quantities, units, and categories. Combine duplicates and omit unnecessary details.
+
+E. Progress Tracking and Adjustments
+
+Track relevant weight trends, measurements, workout performance, energy, sleep, recovery, and adherence. Specify measurement methods, frequency, and interpretation. Include concise weekly check-ins and actionable rules for maintaining or adjusting the plan.
+
+F. Sustainable Lifestyle Habits
+
+Provide brief, actionable recommendations for sleep, recovery, hydration, daily movement, stress, motivation, setbacks, and long-term maintenance.
+
+G. First Seven Days
+
+Create a seven-day checklist. Each item must include the day, objective, action steps, estimated time, completion criteria, and optional notes. Keep instructions practical and concise.
+
+3. Mandatory JSON Output Schema
+
+Return one valid JSON object using the exact schema below. Do not rename, remove, reorder, or add fields.
+
+Use arrays for lists, empty arrays for unnecessary optional content, and null for unknown scalar values. Populate applicable fields with personalized content. Keep all descriptions concise.
+
+{
+  "schema_version": "1.0.0",
+  "guide_status": "complete",
+  "profile": {
+    "current_weight": {
+      "value": null,
+      "unit": null
+    },
+    "target_weight": {
+      "value": null,
+      "unit": null
+    },
+    "height": {
+      "value": null,
+      "unit": null
+    },
+    "age": null,
+    "target_timeframe": {
+      "value": null,
+      "unit": null
+    },
+    "fitness_level": null,
+    "primary_goals": [],
+    "health_considerations": [],
+    "dietary_restrictions": [],
+    "food_preferences": [],
+    "equipment": [],
+    "weekly_availability": [],
+    "lifestyle_constraints": []
+  },
+  "assessment": {
+    "goal_feasibility": null,
+    "safety_considerations": [],
+    "assumptions": [],
+    "missing_information": [],
+    "recommendations": [],
+    "professional_referral_recommended": false
+  },
+  "transformation_roadmap": [
+    {
+      "milestone_id": "milestone_1",
+      "timeframe": null,
+      "objective": null,
+      "actions": [],
+      "success_metrics": [],
+      "adjustment_criteria": []
+    }
+  ],
+  "workout_plan": {
+    "weekly_overview": [
+      {
+        "day": null,
+        "activity_type": null,
+        "session_id": null,
+        "duration_minutes": null,
+        "notes": null
+      }
+    ],
+    "sessions": [
+      {
+        "session_id": "session_1",
+        "session_name": null,
+        "training_goal": null,
+        "scheduled_day": null,
+        "duration_minutes": null,
+        "warm_up": [],
+        "exercises": [
+          {
+            "exercise_id": "exercise_1",
+            "name": null,
+            "target_muscles": [],
+            "sets": null,
+            "repetitions": null,
+            "duration_seconds": null,
+            "intensity_target": null,
+            "rest_seconds": null,
+            "equipment": [],
+            "instructions": [],
+            "modifications": [],
+            "progression_rule": null,
+            "safety_notes": []
+          }
+        ],
+        "cool_down": [],
+        "recovery_requirements": [],
+        "session_notes": []
+      }
+    ],
+    "progression_rules": [
+      {
+        "rule_id": "progression_1",
+        "condition": null,
+        "action": null,
+        "safety_limit": null
+      }
+    ]
+  },
+  "nutrition_plan": {
+    "dietary_components": [
+      {
+        "component_id": "nutrition_1",
+        "name": null,
+        "purpose": null,
+        "target_value": null,
+        "unit": null,
+        "instructions": [],
+        "personalization_notes": []
+      }
+    ],
+    "daily_targets": {
+      "calories": {
+        "value": null,
+        "unit": "kcal/day",
+        "is_estimate": true
+      },
+      "protein": {
+        "value": null,
+        "unit": "g/day",
+        "is_estimate": true
+      },
+      "carbohydrates": {
+        "value": null,
+        "unit": "g/day",
+        "is_estimate": true
+      },
+      "fat": {
+        "value": null,
+        "unit": "g/day",
+        "is_estimate": true
+      },
+      "fiber": {
+        "value": null,
+        "unit": "g/day",
+        "is_estimate": true
+      }
+    },
+    "seven_day_meal_plan": [
+      {
+        "day": 1,
+        "meals": [
+          {
+            "meal_id": "day1_meal1",
+            "meal_name": null,
+            "meal_type": null,
+            "ingredients": [
+              {
+                "name": null,
+                "quantity": null,
+                "unit": null
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": null,
+            "estimated_protein_g": null,
+            "estimated_carbohydrates_g": null,
+            "estimated_fat_g": null,
+            "preparation_instructions": [],
+            "substitutions": []
+          }
+        ],
+        "daily_notes": []
+      }
+    ],
+    "nutrition_adjustment_rules": [
+      {
+        "rule_id": "nutrition_rule_1",
+        "condition": null,
+        "action": null,
+        "review_period": null,
+        "safety_notes": []
+      }
+    ]
+  },
+  "grocery_list": [
+    {
+      "item_id": "grocery_1",
+      "name": null,
+      "quantity": null,
+      "unit": null,
+      "category": null,
+      "associated_meals": [],
+      "substitutions": [],
+      "storage_notes": []
+    }
+  ],
+  "progress_tracker": {
+    "metrics": [
+      {
+        "metric_id": "metric_1",
+        "name": null,
+        "purpose": null,
+        "measurement_method": null,
+        "frequency": null,
+        "interpretation_guidance": [],
+        "adjustment_triggers": []
+      }
+    ],
+    "weekly_check_in": [
+      {
+        "check_in_id": "checkin_1",
+        "questions": [],
+        "review_actions": [],
+        "decision_rules": []
+      }
+    ]
+  },
+  "lifestyle_habits": [
+    {
+      "habit_id": "habit_1",
+      "category": null,
+      "recommendation": null,
+      "action_steps": [],
+      "frequency": null,
+      "adaptation_notes": []
+    }
+  ],
+  "first_seven_days_checklist": [
+    {
+      "day": 1,
+      "objective": null,
+      "action_steps": [],
+      "estimated_minutes": null,
+      "completion_criteria": [],
+      "notes": []
+    }
+  ],
+  "disclaimers": [],
+  "follow_up_questions": []
+}
+
+4. JSON Consistency Rules
+Return raw JSON only, without Markdown fences or extra text.
+Follow RFC 8259. Use double quotes and no comments, trailing commas, undefined, NaN, or Infinity.
+Preserve every schema key, order, and data type.
+Use numbers, booleans, strings, arrays, and null appropriately.
+Use consistent measurement units and unique, predictable IDs.
+Include seven meal-plan days and seven checklist days when a complete guide is appropriate.
+Keep workout schedules consistent with sessions and grocery quantities consistent with meal ingredients.
+Minimize output length. Use short phrases, avoid repetition, and leave unnecessary optional arrays empty. Do not remove required keys.
+Use guide_status values "complete", "needs_information", or "safety_review_required" appropriately.
+Record essential missing information in assessment.missing_information and follow_up_questions.
+Identify unrealistic or unsafe goals and offer safer alternatives where possible.
+Never invent personal details or unsupported numerical targets. Keep the schema unchanged for every individual.
+5. Final Quality Validation
+
+Before returning, silently verify that:
+
+The JSON parses and all required fields and types are correct.
+Both seven-day lists contain seven entries when appropriate.
+Workouts, nutrition targets, meals, and grocery quantities are consistent.
+Health limitations and dietary restrictions are respected.
+Progression and adjustment rules are actionable.
+Estimates are identified and unknown values use null.
+Unnecessary repetition and descriptions are removed.
+No extra keys or text appear outside the JSON.
+
+Return only the final JSON object.

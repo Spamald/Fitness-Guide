@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#20231f">
+    <title>Form &amp; Field | Fitness guide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Form and Field home">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect class="logo-tile" x="2" y="2" width="60" height="60" rx="8"/>
+          <path class="logo-f" d="M10 13h29v9H20v7h17v9H20v14H10z"/>
+          <path class="logo-star" d="m48 13 3.3 8.2 8.7.6-6.7 5.6 2.2 8.5-7.5-4.7-7.4 4.7 2.1-8.5-6.7-5.6 8.7-.6z"/>
+        </svg>
+        <span class="brand-name"><span>FORM</span><span class="brand-amp">&amp;</span><span>FIELD</span></span>
+      </a>
+      <div class="topbar-note"><span class="status-dot"></span> YOUR ROUTINE. YOUR RULES.</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">A LITTLE SUPPORT GOES A LONG WAY</p>
+          <h1>Stronger days.<br><em>One step at a time.</em></h1>
+          <p class="hero-description">No perfect routines required. Tell us what life looks like, and we’ll put together a practical plan you can make your own.</p>
+          <div class="hero-actions">
+            <a class="hero-button" href="#guide-form">Let’s build your plan <span aria-hidden="true">↓</span></a>
+            <span class="hero-promise">Simple, personal, and made for real life.</span>
+          </div>
+        </div>
+        <div class="hero-art">
+          <svg class="power-art" viewBox="0 0 600 360" role="img" aria-label="Bold illustration of a dumbbell against a sunburst">
+            <path class="burst-shape" d="M296 8 326 66 377 25 386 91 449 72 434 137 502 140 465 193 526 225 467 258 499 319 431 310 414 355 360 324 321 357 291 310 231 344 226 283 160 294 185 238 120 209 173 173 136 117 204 120 219 57 271 91Z"/>
+            <circle class="burst-center" cx="319" cy="190" r="114"/>
+            <g class="barbell" transform="rotate(-24 319 190)">
+              <rect class="barbell-grip" x="174" y="178" width="290" height="24" rx="8"/>
+              <rect class="barbell-collar" x="207" y="166" width="14" height="48" rx="3"/>
+              <rect class="barbell-collar" x="417" y="166" width="14" height="48" rx="3"/>
+              <path class="barbell-plate" d="M166 139h27l14 19v64l-14 19h-27l-14-19v-64z"/>
+              <path class="barbell-plate" d="M445 139h27l14 19v64l-14 19h-27l-14-19v-64z"/>
+              <path class="barbell-highlight" d="M164 157h10v66h-10zm279 0h10v66h-10z"/>
+            </g>
+            <path class="spark spark-one" d="m81 70 17 33 36 5-26 25 6 36-33-17-32 17 6-36-27-25 37-5z"/>
+            <path class="spark spark-two" d="m518 62 10 19 21 3-15 15 4 21-20-10-19 10 4-21-15-15 21-3z"/>
+          </svg>
+          <div class="art-sticker"><span>MADE</span><strong>BY YOU</strong></div>
+          <div class="art-caption"><span>SHOW UP.</span><span>GET STRONGER.</span></div>
+          <aside class="field-popover" id="field-popover" aria-label="A friendly fitness reminder">
+            <button class="popover-close" id="dismiss-popover" type="button" aria-label="Dismiss reminder">×</button>
+            <span class="popover-tag">A QUICK REMINDER</span>
+            <p>You don’t need a perfect plan. You just need a place to start.</p>
+            <a href="#guide-form">Start right here <span aria-hidden="true">↗</span></a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="workspace" aria-label="Fitness guide generator">
+        <form id="guide-form" class="form-panel">
+          <div class="panel-heading">
+            <div><p class="eyebrow">FIRST, A LITTLE ABOUT YOU</p><h2>Let’s make it personal.</h2></div>
+            <span class="field-count">ABOUT 2 MIN</span>
+          </div>
+          <p class="panel-intro">Share what you can. There’s no judgment and no perfect starting point—just useful details to help shape your plan.</p>
+
+          <fieldset>
+            <legend><span class="step-number">01</span> Your starting point</legend>
+            <div class="field-grid">
+              <label class="field">
+                <span>Current weight <b>*</b></span>
+                <input name="current_weight" required placeholder="e.g. 140 pounds" autocomplete="off">
+              </label>
+              <label class="field">
+                <span>Target weight <b>*</b></span>
+                <input name="desired_weight" required placeholder="e.g. 130 pounds" autocomplete="off">
+              </label>
+              <label class="field">
+                <span>Height <b>*</b></span>
+                <input name="height" required placeholder="e.g. 5 foot 6 inches" autocomplete="off">
+              </label>
+              <label class="field">
+                <span>Age <b>*</b></span>
+                <input name="age" required placeholder="e.g. 30" autocomplete="off">
+              </label>
+              <label class="field field-wide">
+                <span>Target timeframe <b>*</b></span>
+                <input name="target_timeframe" required placeholder="e.g. 4 months" autocomplete="off">
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="step-number">02</span> Goals &amp; experience</legend>
+            <div class="field-grid">
+              <label class="field field-wide">
+                <span>Activity level and exercise experience <b>*</b></span>
+                <input name="activity_level_and_exercise_experience" required placeholder="e.g. Lightly active, new to strength training">
+              </label>
+              <label class="field field-wide">
+                <span>What would you like to achieve? <b>*</b></span>
+                <textarea name="primary_goals" required rows="2" placeholder="e.g. Build strength, improve energy, and feel fitter"></textarea>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="step-number">03</span> Health &amp; preferences</legend>
+            <div class="field-grid">
+              <label class="field field-wide">
+                <span>Health conditions, injuries, or limitations <b>*</b></span>
+                <textarea name="health_conditions_injuries_limitations_or_none_disclosed" required rows="2" placeholder="Include relevant details, or enter “none”"></textarea>
+              </label>
+              <label class="field field-wide">
+                <span>Allergies, intolerances, or dietary requirements <b>*</b></span>
+                <textarea name="allergies_intolerances_religious_requirements_or_none_disclosed" required rows="2" placeholder="Include restrictions, or enter “none”"></textarea>
+              </label>
+              <label class="field field-wide">
+                <span>Food likes, dislikes, and eating habits <b>*</b></span>
+                <textarea name="food_likes_dislikes_and_eating_habits" required rows="2" placeholder="e.g. Enjoys quick vegetarian meals; usually eats three times a day"></textarea>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="step-number">04</span> Your day-to-day</legend>
+            <div class="field-grid">
+              <label class="field field-wide">
+                <span>Equipment, days available, and session length <b>*</b></span>
+                <textarea name="gym_or_home_equipment_days_available_and_minutes_per_session" required rows="2" placeholder="e.g. Home dumbbells, 3 days a week, 45 minutes"></textarea>
+              </label>
+              <label class="field field-wide">
+                <span>Schedule, budget, sleep, cooking, or other constraints <b>*</b></span>
+                <textarea name="schedule_budget_sleep_cooking_ability_and_other_constraints" required rows="2" placeholder="Share anything that could shape a realistic plan"></textarea>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-footer">
+              <p><span class="privacy-icon" aria-hidden="true">◇</span> Your details are only used to create your guide.</p>
+              <button class="submit-button" type="submit"><span>Make my guide</span><span aria-hidden="true">↗</span></button>
+          </div>
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <div class="request-status" id="request-status" role="status" hidden></div>
+        </form>
+
+        <aside class="side-note">
+          <div class="note-mark" aria-hidden="true">✳</div>
+          <p class="eyebrow">A FRIENDLY REMINDER</p>
+          <h3>You don’t have to do it all today.</h3>
+          <p>Small, repeatable steps can add up. Your guide is here to help—not to give you one more thing to stress about.</p>
+          <div class="note-divider"></div>
+          <p class="note-small">For personalized medical or nutrition advice, check in with a qualified health professional.</p>
+        </aside>
+      </section>
+
+      <section id="results" class="results" aria-live="polite" hidden>
+        <div class="results-heading">
+          <div><p class="eyebrow">YOUR PLAN, YOUR PACE</p><h2>Your guide is ready.</h2><p id="results-summary" class="results-summary"></p></div>
+          <button id="download-guide" class="secondary-button" type="button"><span aria-hidden="true">↓</span> Download JSON</button>
+        </div>
+        <div id="guide-overview" class="overview-grid"></div>
+        <div id="guide-sections" class="guide-sections"></div>
+      </section>
+    </main>
+
+    <footer class="footer"><span>FORM &amp; FIELD</span><span>PROGRESS IS A PRACTICE. KEEP GOING.</span></footer>
+  </body>
+</html>

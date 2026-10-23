@@ -1,0 +1,2256 @@
+{
+  "schema_version": "1.0.0",
+  "guide_status": "complete",
+  "profile": {
+    "current_weight": {
+      "value": 140,
+      "unit": "lb"
+    },
+    "target_weight": {
+      "value": 120,
+      "unit": "lb"
+    },
+    "height": {
+      "value": 63,
+      "unit": "in"
+    },
+    "age": 22,
+    "target_timeframe": {
+      "value": 3,
+      "unit": "months"
+    },
+    "fitness_level": "sedentary",
+    "primary_goals": [
+      "look fit",
+      "weight loss"
+    ],
+    "health_considerations": [],
+    "dietary_restrictions": [],
+    "food_preferences": [],
+    "equipment": [
+      "gym"
+    ],
+    "weekly_availability": [
+      "Mon 18:00-19:00",
+      "Tue 18:00-19:00",
+      "Wed 18:00-19:00",
+      "Thu 18:00-19:00",
+      "Fri 18:00-19:00"
+    ],
+    "lifestyle_constraints": [
+      "work",
+      "school"
+    ]
+  },
+  "assessment": {
+    "goal_feasibility": "feasible with ~500 kcal daily deficit and 5 weekly sessions",
+    "safety_considerations": [],
+    "assumptions": [
+      "No medical restrictions",
+      "Can dedicate ~1 hour per weekday",
+      "Access to basic gym equipment"
+    ],
+    "missing_information": [],
+    "recommendations": [
+      "Progressive overload each week",
+      "Track weight weekly",
+      "Prioritize sleep 7‑8 h"
+    ],
+    "professional_referral_recommended": false
+  },
+  "transformation_roadmap": [
+    {
+      "milestone_id": "milestone_1",
+      "timeframe": "Week 4",
+      "objective": "Lose 5 lb",
+      "actions": [
+        "Maintain 1500 kcal intake",
+        "Complete all strength sessions"
+      ],
+      "success_metrics": [
+        "Weight ↓5 lb",
+        "Bench press +5 lb"
+      ],
+      "adjustment_criteria": [
+        "If weight loss <1 lb/week, reduce calories 100 kcal"
+      ]
+    },
+    {
+      "milestone_id": "milestone_2",
+      "timeframe": "Week 8",
+      "objective": "Lose additional 5 lb, improve cardio endurance",
+      "actions": [
+        "Add 5 min HIIT intervals"
+      ],
+      "success_metrics": [
+        "Weight ↓10 lb total",
+        "Run 1 km <6 min"
+      ],
+      "adjustment_criteria": [
+        "If fatigue rises, add active‑recovery day"
+      ]
+    },
+    {
+      "milestone_id": "milestone_3",
+      "timeframe": "Week 12",
+      "objective": "Reach target 120 lb, solidify habits",
+      "actions": [
+        "Maintain diet",
+        "Transition to maintenance calories"
+      ],
+      "success_metrics": [
+        "Weight 120 lb",
+        "Visible muscle tone"
+      ],
+      "adjustment_criteria": [
+        "If weight stalls >2 weeks, review calorie accuracy"
+      ]
+    }
+  ],
+  "workout_plan": {
+    "weekly_overview": [
+      {
+        "day": "Monday",
+        "activity_type": "Strength",
+        "session_id": "session_1",
+        "duration_minutes": 60,
+        "notes": null
+      },
+      {
+        "day": "Tuesday",
+        "activity_type": "Strength",
+        "session_id": "session_2",
+        "duration_minutes": 60,
+        "notes": null
+      },
+      {
+        "day": "Wednesday",
+        "activity_type": "Strength",
+        "session_id": "session_3",
+        "duration_minutes": 60,
+        "notes": null
+      },
+      {
+        "day": "Thursday",
+        "activity_type": "HIIT Cardio",
+        "session_id": "session_4",
+        "duration_minutes": 45,
+        "notes": null
+      },
+      {
+        "day": "Friday",
+        "activity_type": "Active Recovery",
+        "session_id": "session_5",
+        "duration_minutes": 30,
+        "notes": null
+      },
+      {
+        "day": "Saturday",
+        "activity_type": "Rest",
+        "session_id": null,
+        "duration_minutes": null,
+        "notes": null
+      },
+      {
+        "day": "Sunday",
+        "activity_type": "Rest",
+        "session_id": null,
+        "duration_minutes": null,
+        "notes": null
+      }
+    ],
+    "sessions": [
+      {
+        "session_id": "session_1",
+        "session_name": "Full Body Strength",
+        "training_goal": "muscle hypertrophy",
+        "scheduled_day": "Monday",
+        "duration_minutes": 60,
+        "warm_up": [
+          "5 min treadmill walk",
+          "Dynamic leg swings x10 each"
+        ],
+        "exercises": [
+          {
+            "exercise_id": "exercise_1",
+            "name": "Barbell Back Squat",
+            "target_muscles": [
+              "quadriceps",
+              "glutes"
+            ],
+            "sets": 3,
+            "repetitions": 10,
+            "duration_seconds": null,
+            "intensity_target": "70 % 1RM",
+            "rest_seconds": 90,
+            "equipment": [
+              "barbell",
+              "rack"
+            ],
+            "instructions": [
+              "Feet shoulder‑wide, descend to parallel"
+            ],
+            "modifications": [
+              "Goblet squat if bar unavailable"
+            ],
+            "progression_rule": "Add 5 lb when 12 reps completed comfortably",
+            "safety_notes": [
+              "Keep chest up",
+              "Do not let knees cave"
+            ]
+          },
+          {
+            "exercise_id": "exercise_2",
+            "name": "Dumbbell Bench Press",
+            "target_muscles": [
+              "pectorals",
+              "triceps"
+            ],
+            "sets": 3,
+            "repetitions": 10,
+            "duration_seconds": null,
+            "intensity_target": "70 % 1RM",
+            "rest_seconds": 90,
+            "equipment": [
+              "dumbbells",
+              "bench"
+            ],
+            "instructions": [
+              "Press up, elbows at 45°"
+            ],
+            "modifications": [
+              "Floor press if bench unavailable"
+            ],
+            "progression_rule": "Add 5 lb per dumbbell when 12 reps achievable",
+            "safety_notes": [
+              "Control descent"
+            ]
+          },
+          {
+            "exercise_id": "exercise_3",
+            "name": "Lat Pulldown",
+            "target_muscles": [
+              "latissimus dorsi"
+            ],
+            "sets": 3,
+            "repetitions": 12,
+            "duration_seconds": null,
+            "intensity_target": "moderate",
+            "rest_seconds": 60,
+            "equipment": [
+              "cable machine"
+            ],
+            "instructions": [
+              "Pull bar to chest, shoulder blades together"
+            ],
+            "modifications": [
+              "Assisted pull‑up"
+            ],
+            "progression_rule": "Increase weight 5 lb when 15 reps possible",
+            "safety_notes": [
+              "Avoid jerking"
+            ]
+          },
+          {
+            "exercise_id": "exercise_4",
+            "name": "Dumbbell Shoulder Press",
+            "target_muscles": [
+              "deltoids"
+            ],
+            "sets": 3,
+            "repetitions": 10,
+            "duration_seconds": null,
+            "intensity_target": "moderate",
+            "rest_seconds": 60,
+            "equipment": [
+              "dumbbells"
+            ],
+            "instructions": [
+              "Press overhead, lock elbows"
+            ],
+            "modifications": [
+              "Seated press"
+            ],
+            "progression_rule": "Add 2.5 lb per hand when 12 reps smooth",
+            "safety_notes": [
+              "Do not arch lower back"
+            ]
+          },
+          {
+            "exercise_id": "exercise_5",
+            "name": "Plank",
+            "target_muscles": [
+              "core"
+            ],
+            "sets": 3,
+            "repetitions": null,
+            "duration_seconds": 45,
+            "intensity_target": null,
+            "rest_seconds": 60,
+            "equipment": [],
+            "instructions": [
+              "Maintain straight line, elbows under shoulders"
+            ],
+            "modifications": [
+              "Knees on ground"
+            ],
+            "progression_rule": "Add 15 s each week",
+            "safety_notes": [
+              "Avoid hips sagging"
+            ]
+          }
+        ],
+        "cool_down": [
+          "Static stretch major muscles 30 s each"
+        ],
+        "recovery_requirements": [
+          "Protein shake within 60 min",
+          "Hydration 500 ml water"
+        ],
+        "session_notes": []
+      },
+      {
+        "session_id": "session_2",
+        "session_name": "Upper Body Strength",
+        "training_goal": "upper body hypertrophy",
+        "scheduled_day": "Tuesday",
+        "duration_minutes": 60,
+        "warm_up": [
+          "Rowing 5 min",
+          "Arm circles 10 each"
+        ],
+        "exercises": [
+          {
+            "exercise_id": "exercise_6",
+            "name": "Incline Dumbbell Press",
+            "target_muscles": [
+              "upper pectorals"
+            ],
+            "sets": 3,
+            "repetitions": 10,
+            "duration_seconds": null,
+            "intensity_target": "70 % 1RM",
+            "rest_seconds": 90,
+            "equipment": [
+              "bench",
+              "dumbbells"
+            ],
+            "instructions": [
+              "Press up, elbows slightly below shoulder level"
+            ],
+            "modifications": [
+              "Machine press"
+            ],
+            "progression_rule": "Add 5 lb per hand when 12 reps easy",
+            "safety_notes": [
+              "Control descent"
+            ]
+          },
+          {
+            "exercise_id": "exercise_7",
+            "name": "Seated Cable Row",
+            "target_muscles": [
+              "mid back"
+            ],
+            "sets": 3,
+            "repetitions": 12,
+            "duration_seconds": null,
+            "intensity_target": "moderate",
+            "rest_seconds": 60,
+            "equipment": [
+              "cable machine"
+            ],
+            "instructions": [
+              "Pull handle to torso, squeeze shoulder blades"
+            ],
+            "modifications": [
+              "Resistance band row"
+            ],
+            "progression_rule": "Increase weight 5 lb when 15 reps possible",
+            "safety_notes": [
+              "Keep back neutral"
+            ]
+          },
+          {
+            "exercise_id": "exercise_8",
+            "name": "Lateral Raises",
+            "target_muscles": [
+              "lateral deltoids"
+            ],
+            "sets": 3,
+            "repetitions": 15,
+            "duration_seconds": null,
+            "intensity_target": "light",
+            "rest_seconds": 45,
+            "equipment": [
+              "dumbbells"
+            ],
+            "instructions": [
+              "Raise arms to shoulder height"
+            ],
+            "modifications": [
+              "Cable lateral raise"
+            ],
+            "progression_rule": "Add 2.5 lb per hand when 20 reps possible",
+            "safety_notes": [
+              "Avoid shrugging shoulders"
+            ]
+          },
+          {
+            "exercise_id": "exercise_9",
+            "name": "Triceps Rope Pushdown",
+            "target_muscles": [
+              "triceps"
+            ],
+            "sets": 3,
+            "repetitions": 12,
+            "duration_seconds": null,
+            "intensity_target": "moderate",
+            "rest_seconds": 60,
+            "equipment": [
+              "cable machine",
+              "rope"
+            ],
+            "instructions": [
+              "Extend elbows, keep upper arms static"
+            ],
+            "modifications": [
+              "Bench dips"
+            ],
+            "progression_rule": "Add 5 lb when 15 reps smooth",
+            "safety_notes": [
+              "Do not flare elbows"
+            ]
+          }
+        ],
+        "cool_down": [
+          "Chest and shoulder stretch 30 s each"
+        ],
+        "recovery_requirements": [
+          "Stretch 5 min"
+        ],
+        "session_notes": []
+      },
+      {
+        "session_id": "session_3",
+        "session_name": "Lower Body Strength",
+        "training_goal": "leg hypertrophy",
+        "scheduled_day": "Wednesday",
+        "duration_minutes": 60,
+        "warm_up": [
+          "Stationary bike 5 min",
+          "Leg swings 10 each"
+        ],
+        "exercises": [
+          {
+            "exercise_id": "exercise_10",
+            "name": "Leg Press",
+            "target_muscles": [
+              "quadriceps",
+              "glutes"
+            ],
+            "sets": 3,
+            "repetitions": 12,
+            "duration_seconds": null,
+            "intensity_target": "70 % 1RM",
+            "rest_seconds": 90,
+            "equipment": [
+              "leg press machine"
+            ],
+            "instructions": [
+              "Push through heels, full extension"
+            ],
+            "modifications": [
+              "Goblet squat"
+            ],
+            "progression_rule": "Add 10 lb when 15 reps possible",
+            "safety_notes": [
+              "Knees aligned with feet"
+            ]
+          },
+          {
+            "exercise_id": "exercise_11",
+            "name": "Romanian Deadlift",
+            "target_muscles": [
+              "hamstrings",
+              "glutes"
+            ],
+            "sets": 3,
+            "repetitions": 10,
+            "duration_seconds": null,
+            "intensity_target": "moderate",
+            "rest_seconds": 90,
+            "equipment": [
+              "barbell"
+            ],
+            "instructions": [
+              "Hip hinge, keep back neutral"
+            ],
+            "modifications": [
+              "Dumbbell RDL"
+            ],
+            "progression_rule": "Add 5 lb when form solid",
+            "safety_notes": [
+              "Do not round spine"
+            ]
+          },
+          {
+            "exercise_id": "exercise_12",
+            "name": "Calf Raise",
+            "target_muscles": [
+              "calves"
+            ],
+            "sets": 3,
+            "repetitions": 15,
+            "duration_seconds": null,
+            "intensity_target": "bodyweight or light",
+            "rest_seconds": 60,
+            "equipment": [
+              "machine",
+              "step"
+            ],
+            "instructions": [
+              "Rise onto balls of feet"
+            ],
+            "modifications": [
+              "Single‑leg raise"
+            ],
+            "progression_rule": "Add weight when 20 reps easy",
+            "safety_notes": [
+              "Control down phase"
+            ]
+          }
+        ],
+        "cool_down": [
+          "Hip flexor stretch 30 s each"
+        ],
+        "recovery_requirements": [
+          "Foam roll legs 5 min"
+        ],
+        "session_notes": []
+      },
+      {
+        "session_id": "session_4",
+        "session_name": "HIIT Cardio",
+        "training_goal": "cardiovascular fitness",
+        "scheduled_day": "Thursday",
+        "duration_minutes": 45,
+        "warm_up": [
+          "Light jog 5 min"
+        ],
+        "exercises": [
+          {
+            "exercise_id": "exercise_13",
+            "name": "Bike Sprint Intervals",
+            "target_muscles": [
+              "quadriceps",
+              "glutes"
+            ],
+            "sets": 8,
+            "repetitions": null,
+            "duration_seconds": 30,
+            "intensity_target": "90 % max effort",
+            "rest_seconds": 90,
+            "equipment": [
+              "stationary bike"
+            ],
+            "instructions": [
+              "All‑out pedal for 30 s"
+            ],
+            "modifications": [
+              "Rowing machine"
+            ],
+            "progression_rule": "Add 1 interval per week up to 12",
+            "safety_notes": [
+              "Maintain proper posture"
+            ]
+          }
+        ],
+        "cool_down": [
+          "Slow pedal 5 min",
+          "Lower body stretch 5 min"
+        ],
+        "recovery_requirements": [
+          "Hydrate 250 ml post‑session"
+        ],
+        "session_notes": []
+      },
+      {
+        "session_id": "session_5",
+        "session_name": "Active Recovery / Mobility",
+        "training_goal": "flexibility & recovery",
+        "scheduled_day": "Friday",
+        "duration_minutes": 30,
+        "warm_up": [],
+        "exercises": [
+          {
+            "exercise_id": "exercise_14",
+            "name": "Yoga Flow (Sun Salutation)",
+            "target_muscles": [
+              "full body"
+            ],
+            "sets": null,
+            "repetitions": null,
+            "duration_seconds": 20,
+            "intensity_target": "low",
+            "rest_seconds": null,
+            "equipment": [],
+            "instructions": [
+              "Perform sequence fluidly"
+            ],
+            "modifications": [
+              "Use blocks"
+            ],
+            "progression_rule": "Increase hold time by 5 s each week",
+            "safety_notes": [
+              "Avoid pain"
+            ]
+          }
+        ],
+        "cool_down": [
+          "Deep breathing 3 min"
+        ],
+        "recovery_requirements": [
+          "Stretch major groups 5 min"
+        ],
+        "session_notes": []
+      }
+    ],
+    "progression_rules": [
+      {
+        "rule_id": "progression_1",
+        "condition": "Complete prescribed reps with proper form for 2 consecutive sessions",
+        "action": "Increase load by 5 lb (upper body) or 10 lb (lower body)",
+        "safety_limit": "Do not increase more than twice per month per exercise"
+      }
+    ]
+  },
+  "nutrition_plan": {
+    "dietary_components": [
+      {
+        "component_id": "nutrition_1",
+        "name": "Calorie Target",
+        "purpose": "weight loss",
+        "target_value": 1500,
+        "unit": "kcal/day",
+        "instructions": [
+          "Track with app"
+        ],
+        "personalization_notes": []
+      },
+      {
+        "component_id": "nutrition_2",
+        "name": "Protein",
+        "purpose": "muscle preservation",
+        "target_value": 120,
+        "unit": "g/day",
+        "instructions": [
+          "Distribute 30 g per main meal"
+        ],
+        "personalization_notes": []
+      },
+      {
+        "component_id": "nutrition_3",
+        "name": "Carbohydrates",
+        "purpose": "energy",
+        "target_value": 150,
+        "unit": "g/day",
+        "instructions": [
+          "Focus on whole grains, fruit, veg"
+        ],
+        "personalization_notes": []
+      },
+      {
+        "component_id": "nutrition_4",
+        "name": "Fat",
+        "purpose": "hormone health",
+        "target_value": 45,
+        "unit": "g/day",
+        "instructions": [
+          "Include nuts, avocado, oil"
+        ],
+        "personalization_notes": []
+      }
+    ],
+    "daily_targets": {
+      "calories": {
+        "value": 1500,
+        "unit": "kcal/day",
+        "is_estimate": true
+      },
+      "protein": {
+        "value": 120,
+        "unit": "g/day",
+        "is_estimate": true
+      },
+      "carbohydrates": {
+        "value": 150,
+        "unit": "g/day",
+        "is_estimate": true
+      },
+      "fat": {
+        "value": 45,
+        "unit": "g/day",
+        "is_estimate": true
+      },
+      "fiber": {
+        "value": 25,
+        "unit": "g/day",
+        "is_estimate": true
+      }
+    },
+    "seven_day_meal_plan": [
+      {
+        "day": 1,
+        "meals": [
+          {
+            "meal_id": "day1_meal1",
+            "meal_name": "Oatmeal Breakfast",
+            "meal_type": "breakfast",
+            "ingredients": [
+              {
+                "name": "rolled oats",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "milk",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "banana",
+                "quantity": 0.5,
+                "unit": "piece"
+              },
+              {
+                "name": "almond butter",
+                "quantity": 1,
+                "unit": "tbsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 350,
+            "estimated_protein_g": 20,
+            "estimated_carbohydrates_g": 45,
+            "estimated_fat_g": 12,
+            "preparation_instructions": [
+              "Combine oats and milk, cook 5 min",
+              "Top with banana slices and almond butter"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day1_meal2",
+            "meal_name": "Grilled Chicken Lunch",
+            "meal_type": "lunch",
+            "ingredients": [
+              {
+                "name": "chicken breast",
+                "quantity": 4,
+                "unit": "oz"
+              },
+              {
+                "name": "quinoa (cooked)",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "broccoli florets",
+                "quantity": 1,
+                "unit": "cup"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 450,
+            "estimated_protein_g": 40,
+            "estimated_carbohydrates_g": 45,
+            "estimated_fat_g": 8,
+            "preparation_instructions": [
+              "Season chicken, grill 6 min each side",
+              "Steam broccoli",
+              "Serve over quinoa"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day1_meal3",
+            "meal_name": "Salmon Dinner",
+            "meal_type": "dinner",
+            "ingredients": [
+              {
+                "name": "salmon fillet",
+                "quantity": 4,
+                "unit": "oz"
+              },
+              {
+                "name": "sweet potato",
+                "quantity": 1,
+                "unit": "medium"
+              },
+              {
+                "name": "green beans",
+                "quantity": 1,
+                "unit": "cup"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 500,
+            "estimated_protein_g": 35,
+            "estimated_carbohydrates_g": 45,
+            "estimated_fat_g": 20,
+            "preparation_instructions": [
+              "Bake salmon 375°F 12 min",
+              "Roast sweet potato cubes 20 min",
+              "Steam green beans"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day1_meal4",
+            "meal_name": "Greek Yogurt Snack",
+            "meal_type": "snack",
+            "ingredients": [
+              {
+                "name": "plain Greek yogurt",
+                "quantity": 1,
+                "unit": "cup"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 150,
+            "estimated_protein_g": 15,
+            "estimated_carbohydrates_g": 10,
+            "estimated_fat_g": 3,
+            "preparation_instructions": [
+              "Serve chilled"
+            ],
+            "substitutions": []
+          }
+        ],
+        "daily_notes": []
+      },
+      {
+        "day": 2,
+        "meals": [
+          {
+            "meal_id": "day2_meal1",
+            "meal_name": "Oatmeal Breakfast",
+            "meal_type": "breakfast",
+            "ingredients": [
+              {
+                "name": "rolled oats",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "milk",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "banana",
+                "quantity": 0.5,
+                "unit": "piece"
+              },
+              {
+                "name": "almond butter",
+                "quantity": 1,
+                "unit": "tbsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 350,
+            "estimated_protein_g": 20,
+            "estimated_carbohydrates_g": 45,
+            "estimated_fat_g": 12,
+            "preparation_instructions": [
+              "Cook oats with milk, top with banana and butter"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day2_meal2",
+            "meal_name": "Turkey Wrap Lunch",
+            "meal_type": "lunch",
+            "ingredients": [
+              {
+                "name": "whole wheat tortilla",
+                "quantity": 1,
+                "unit": "piece"
+              },
+              {
+                "name": "turkey breast slices",
+                "quantity": 4,
+                "unit": "oz"
+              },
+              {
+                "name": "mixed greens",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "mustard",
+                "quantity": 1,
+                "unit": "tsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 400,
+            "estimated_protein_g": 35,
+            "estimated_carbohydrates_g": 40,
+            "estimated_fat_g": 7,
+            "preparation_instructions": [
+              "Assemble tortilla with turkey, greens, mustard"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day2_meal3",
+            "meal_name": "Beef Stir‑Fry Dinner",
+            "meal_type": "dinner",
+            "ingredients": [
+              {
+                "name": "lean beef strips",
+                "quantity": 4,
+                "unit": "oz"
+              },
+              {
+                "name": "brown rice (cooked)",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "mixed bell peppers",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "soy sauce",
+                "quantity": 1,
+                "unit": "tbsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 500,
+            "estimated_protein_g": 35,
+            "estimated_carbohydrates_g": 55,
+            "estimated_fat_g": 15,
+            "preparation_instructions": [
+              "Stir‑fry beef and peppers, add soy sauce, serve over rice"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day2_meal4",
+            "meal_name": "Cottage Cheese Snack",
+            "meal_type": "snack",
+            "ingredients": [
+              {
+                "name": "low‑fat cottage cheese",
+                "quantity": 1,
+                "unit": "cup"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 150,
+            "estimated_protein_g": 20,
+            "estimated_carbohydrates_g": 6,
+            "estimated_fat_g": 2,
+            "preparation_instructions": [
+              "Serve plain"
+            ],
+            "substitutions": []
+          }
+        ],
+        "daily_notes": []
+      },
+      {
+        "day": 3,
+        "meals": [
+          {
+            "meal_id": "day3_meal1",
+            "meal_name": "Oatmeal Breakfast",
+            "meal_type": "breakfast",
+            "ingredients": [
+              {
+                "name": "rolled oats",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "milk",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "banana",
+                "quantity": 0.5,
+                "unit": "piece"
+              },
+              {
+                "name": "almond butter",
+                "quantity": 1,
+                "unit": "tbsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 350,
+            "estimated_protein_g": 20,
+            "estimated_carbohydrates_g": 45,
+            "estimated_fat_g": 12,
+            "preparation_instructions": [
+              "Cook and top as usual"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day3_meal2",
+            "meal_name": "Tuna Salad Lunch",
+            "meal_type": "lunch",
+            "ingredients": [
+              {
+                "name": "canned tuna in water",
+                "quantity": 4,
+                "unit": "oz"
+              },
+              {
+                "name": "olive oil",
+                "quantity": 1,
+                "unit": "tsp"
+              },
+              {
+                "name": "celery",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "mixed greens",
+                "quantity": 2,
+                "unit": "cup"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 380,
+            "estimated_protein_g": 35,
+            "estimated_carbohydrates_g": 8,
+            "estimated_fat_g": 20,
+            "preparation_instructions": [
+              "Mix tuna with oil and celery, serve over greens"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day3_meal3",
+            "meal_name": "Chicken & Veggie Bake Dinner",
+            "meal_type": "dinner",
+            "ingredients": [
+              {
+                "name": "chicken breast",
+                "quantity": 4,
+                "unit": "oz"
+              },
+              {
+                "name": "zucchini",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "carrots",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "olive oil",
+                "quantity": 1,
+                "unit": "tsp"
+              }
+            ]
+          },
+          {
+            "meal_id": "day4_meal2",
+            "meal_name": "Quinoa Veggie Bowl Lunch",
+            "meal_type": "lunch",
+            "ingredients": [
+              {
+                "name": "quinoa (cooked)",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "chickpeas",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "spinach",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "feta cheese",
+                "quantity": 1,
+                "unit": "tbsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 420,
+            "estimated_protein_g": 18,
+            "estimated_carbohydrates_g": 55,
+            "estimated_fat_g": 12,
+            "preparation_instructions": [
+              "Combine ingredients, drizzle with lemon"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day4_meal3",
+            "meal_name": "Shrimp Pasta Dinner",
+            "meal_type": "dinner",
+            "ingredients": [
+              {
+                "name": "whole wheat pasta",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "shrimp",
+                "quantity": 4,
+                "unit": "oz"
+              },
+              {
+                "name": "marinara sauce",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "olive oil",
+                "quantity": 1,
+                "unit": "tsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 480,
+            "estimated_protein_g": 35,
+            "estimated_carbohydrates_g": 55,
+            "estimated_fat_g": 12,
+            "preparation_instructions": [
+              "Cook pasta, sauté shrimp in oil, combine with sauce"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day4_meal4",
+            "meal_name": "Greek Yogurt Snack",
+            "meal_type": "snack",
+            "ingredients": [
+              {
+                "name": "plain Greek yogurt",
+                "quantity": 1,
+                "unit": "cup"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 150,
+            "estimated_protein_g": 15,
+            "estimated_carbohydrates_g": 10,
+            "estimated_fat_g": 3,
+            "preparation_instructions": [
+              "Serve chilled"
+            ],
+            "substitutions": []
+          }
+        ],
+        "daily_notes": []
+      },
+      {
+        "day": 5,
+        "meals": [
+          {
+            "meal_id": "day5_meal1",
+            "meal_name": "Oatmeal Breakfast",
+            "meal_type": "breakfast",
+            "ingredients": [
+              {
+                "name": "rolled oats",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "milk",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "banana",
+                "quantity": 0.5,
+                "unit": "piece"
+              },
+              {
+                "name": "almond butter",
+                "quantity": 1,
+                "unit": "tbsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 350,
+            "estimated_protein_g": 20,
+            "estimated_carbohydrates_g": 45,
+            "estimated_fat_g": 12,
+            "preparation_instructions": [
+              "Prepare as usual"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day5_meal2",
+            "meal_name": "Turkey Chili Lunch",
+            "meal_type": "lunch",
+            "ingredients": [
+              {
+                "name": "ground turkey",
+                "quantity": 4,
+                "unit": "oz"
+              },
+              {
+                "name": "kidney beans",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "tomato sauce",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "chili powder",
+                "quantity": 1,
+                "unit": "tsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 430,
+            "estimated_protein_g": 35,
+            "estimated_carbohydrates_g": 45,
+            "estimated_fat_g": 10,
+            "preparation_instructions": [
+              "Brown turkey, add beans, sauce, spices, simmer 15 min"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day5_meal3",
+            "meal_name": "Tilapia & Veggies Dinner",
+            "meal_type": "dinner",
+            "ingredients": [
+              {
+                "name": "tilapia fillet",
+                "quantity": 4,
+                "unit": "oz"
+              },
+              {
+                "name": "brown rice (cooked)",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "asparagus",
+                "quantity": 1,
+                "unit": "cup"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 460,
+            "estimated_protein_g": 35,
+            "estimated_carbohydrates_g": 45,
+            "estimated_fat_g": 12,
+            "preparation_instructions": [
+              "Pan‑sear tilapia, steam asparagus, serve with rice"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day5_meal4",
+            "meal_name": "Cottage Cheese Snack",
+            "meal_type": "snack",
+            "ingredients": [
+              {
+                "name": "low‑fat cottage cheese",
+                "quantity": 1,
+                "unit": "cup"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 150,
+            "estimated_protein_g": 20,
+            "estimated_carbohydrates_g": 6,
+            "estimated_fat_g": 2,
+            "preparation_instructions": [
+              "Serve plain"
+            ],
+            "substitutions": []
+          }
+        ],
+        "daily_notes": []
+      },
+      {
+        "day": 6,
+        "meals": [
+          {
+            "meal_id": "day6_meal1",
+            "meal_name": "Oatmeal Breakfast",
+            "meal_type": "breakfast",
+            "ingredients": [
+              {
+                "name": "rolled oats",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "milk",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "banana",
+                "quantity": 0.5,
+                "unit": "piece"
+              },
+              {
+                "name": "almond butter",
+                "quantity": 1,
+                "unit": "tbsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 350,
+            "estimated_protein_g": 20,
+            "estimated_carbohydrates_g": 45,
+            "estimated_fat_g": 12,
+            "preparation_instructions": [
+              "Prepare as usual"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day6_meal2",
+            "meal_name": "Chicken Salad Lunch",
+            "meal_type": "lunch",
+            "ingredients": [
+              {
+                "name": "cooked chicken breast",
+                "quantity": 4,
+                "unit": "oz"
+              },
+              {
+                "name": "mixed greens",
+                "quantity": 2,
+                "unit": "cup"
+              },
+              {
+                "name": "olive oil",
+                "quantity": 1,
+                "unit": "tsp"
+              },
+              {
+                "name": "balsamic vinegar",
+                "quantity": 1,
+                "unit": "tsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 380,
+            "estimated_protein_g": 35,
+            "estimated_carbohydrates_g": 8,
+            "estimated_fat_g": 20,
+            "preparation_instructions": [
+              "Toss chicken with greens, oil, vinegar"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day6_meal3",
+            "meal_name": "Beef & Sweet Potato Dinner",
+            "meal_type": "dinner",
+            "ingredients": [
+              {
+                "name": "lean ground beef",
+                "quantity": 4,
+                "unit": "oz"
+              },
+              {
+                "name": "sweet potato",
+                "quantity": 1,
+                "unit": "medium"
+              },
+              {
+                "name": "green beans",
+                "quantity": 1,
+                "unit": "cup"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 500,
+            "estimated_protein_g": 35,
+            "estimated_carbohydrates_g": 45,
+            "estimated_fat_g": 18,
+            "preparation_instructions": [
+              "Cook beef in skillet, bake sweet potato, steam green beans"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day6_meal4",
+            "meal_name": "Apple Snack",
+            "meal_type": "snack",
+            "ingredients": [
+              {
+                "name": "apple",
+                "quantity": 1,
+                "unit": "medium"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 95,
+            "estimated_protein_g": 0,
+            "estimated_carbohydrates_g": 25,
+            "estimated_fat_g": 0,
+            "preparation_instructions": [
+              "Wash and eat"
+            ],
+            "substitutions": []
+          }
+        ],
+        "daily_notes": []
+      },
+      {
+        "day": 7,
+        "meals": [
+          {
+            "meal_id": "day7_meal1",
+            "meal_name": "Oatmeal Breakfast",
+            "meal_type": "breakfast",
+            "ingredients": [
+              {
+                "name": "rolled oats",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "milk",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "banana",
+                "quantity": 0.5,
+                "unit": "piece"
+              },
+              {
+                "name": "almond butter",
+                "quantity": 1,
+                "unit": "tbsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 350,
+            "estimated_protein_g": 20,
+            "estimated_carbohydrates_g": 45,
+            "estimated_fat_g": 12,
+            "preparation_instructions": [
+              "Prepare as usual"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day7_meal2",
+            "meal_name": "Veggie Omelette Lunch",
+            "meal_type": "lunch",
+            "ingredients": [
+              {
+                "name": "egg whites",
+                "quantity": 4,
+                "unit": "large"
+              },
+              {
+                "name": "spinach",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "mushrooms",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "feta cheese",
+                "quantity": 1,
+                "unit": "tbsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 300,
+            "estimated_protein_g": 30,
+            "estimated_carbohydrates_g": 8,
+            "estimated_fat_g": 12,
+            "preparation_instructions": [
+              "Cook whites with veg, fold cheese"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day7_meal3",
+            "meal_name": "Chicken Stir‑Fry Dinner",
+            "meal_type": "dinner",
+            "ingredients": [
+              {
+                "name": "chicken breast",
+                "quantity": 4,
+                "unit": "oz"
+              },
+              {
+                "name": "brown rice (cooked)",
+                "quantity": 0.5,
+                "unit": "cup"
+              },
+              {
+                "name": "broccoli florets",
+                "quantity": 1,
+                "unit": "cup"
+              },
+              {
+                "name": "soy sauce",
+                "quantity": 1,
+                "unit": "tbsp"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 460,
+            "estimated_protein_g": 35,
+            "estimated_carbohydrates_g": 55,
+            "estimated_fat_g": 10,
+            "preparation_instructions": [
+              "Stir‑fry chicken and broccoli, add sauce, serve over rice"
+            ],
+            "substitutions": []
+          },
+          {
+            "meal_id": "day7_meal4",
+            "meal_name": "Greek Yogurt Snack",
+            "meal_type": "snack",
+            "ingredients": [
+              {
+                "name": "plain Greek yogurt",
+                "quantity": 1,
+                "unit": "cup"
+              }
+            ],
+            "portion_instructions": [],
+            "estimated_calories": 150,
+            "estimated_protein_g": 15,
+            "estimated_carbohydrates_g": 10,
+            "estimated_fat_g": 3,
+            "preparation_instructions": [
+              "Serve chilled"
+            ],
+            "substitutions": []
+          }
+        ],
+        "daily_notes": []
+      }
+    ],
+    "nutrition_adjustment_rules": [
+      {
+        "rule_id": "nutrition_rule_1",
+        "condition": "Weight loss <0.5 lb/week for 2 weeks",
+        "action": "Decrease calories by 100 kcal",
+        "review_period": "bi‑weekly",
+        "safety_notes": [
+          "Do not go below 1200 kcal/day"
+        ]
+      }
+    ]
+  },
+  "grocery_list": [
+    {
+      "item_id": "grocery_1",
+      "name": "rolled oats",
+      "quantity": 3.5,
+      "unit": "cup",
+      "category": "grains",
+      "associated_meals": [
+        "day1_meal1",
+        "day2_meal1",
+        "day3_meal1",
+        "day4_meal1",
+        "day5_meal1",
+        "day6_meal1",
+        "day7_meal1"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_2",
+      "name": "milk",
+      "quantity": 7,
+      "unit": "cup",
+      "category": "dairy",
+      "associated_meals": [
+        "day1_meal1",
+        "day2_meal1",
+        "day3_meal1",
+        "day4_meal1",
+        "day5_meal1",
+        "day6_meal1",
+        "day7_meal1"
+      ],
+      "substitutions": [
+        "almond milk"
+      ],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_3",
+      "name": "banana",
+      "quantity": 3.5,
+      "unit": "piece",
+      "category": "fruit",
+      "associated_meals": [
+        "day1_meal1",
+        "day2_meal1",
+        "day3_meal1",
+        "day4_meal1",
+        "day5_meal1",
+        "day6_meal1",
+        "day7_meal1"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+{
+      "item_id": "grocery_4",
+      "name": "almond butter",
+      "quantity": 7,
+      "unit": "tbsp",
+      "category": "nuts & spreads",
+      "associated_meals": [
+        "day1_meal1",
+        "day2_meal1",
+        "day3_meal1",
+        "day4_meal1",
+        "day5_meal1",
+        "day6_meal1",
+        "day7_meal1"
+      ],
+      "substitutions": [
+        "peanut butter"
+      ],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_5",
+      "name": "chicken breast",
+      "quantity": 1.75,
+      "unit": "lb",
+      "category": "protein",
+      "associated_meals": [
+        "day1_meal2",
+        "day3_meal3",
+        "day5_meal3",
+        "day6_meal2",
+        "day7_meal3"
+      ],
+      "substitutions": [
+        "turkey breast"
+      ],
+      "storage_notes": [
+        "Freeze if not used within 3 days"
+      ]
+    },
+    {
+      "item_id": "grocery_6",
+      "name": "quinoa (cooked)",
+      "quantity": 3.5,
+      "unit": "cup",
+      "category": "grains",
+      "associated_meals": [
+        "day1_meal2",
+        "day4_meal2"
+      ],
+      "substitutions": [
+        "brown rice"
+      ],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_7",
+      "name": "broccoli florets",
+      "quantity": 7,
+      "unit": "cup",
+      "category": "vegetable",
+      "associated_meals": [
+        "day1_meal2",
+        "day7_meal3"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_8",
+      "name": "salmon fillet",
+      "quantity": 1.75,
+      "unit": "lb",
+      "category": "protein",
+      "associated_meals": [
+        "day1_meal3"
+      ],
+      "substitutions": [
+        "trout"
+      ],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_9",
+      "name": "sweet potato",
+      "quantity": 7,
+      "unit": "medium",
+      "category": "vegetable",
+      "associated_meals": [
+        "day1_meal3",
+        "day6_meal3",
+        "day5_meal3"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_10",
+      "name": "green beans",
+      "quantity": 7,
+      "unit": "cup",
+      "category": "vegetable",
+      "associated_meals": [
+        "day1_meal3",
+        "day6_meal3"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_11",
+      "name": "plain Greek yogurt",
+      "quantity": 7,
+      "unit": "cup",
+      "category": "dairy",
+      "associated_meals": [
+        "day1_meal4",
+        "day4_meal4",
+        "day7_meal4"
+      ],
+      "substitutions": [
+        "skyr"
+      ],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_12",
+      "name": "low‑fat cottage cheese",
+      "quantity": 2,
+      "unit": "cup",
+      "category": "dairy",
+      "associated_meals": [
+        "day2_meal4",
+        "day5_meal4"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_13",
+      "name": "whole wheat tortilla",
+      "quantity": 1,
+      "unit": "piece",
+      "category": "grains",
+      "associated_meals": [
+        "day2_meal2"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_14",
+      "name": "turkey breast slices",
+      "quantity": 4,
+      "unit": "oz",
+      "category": "protein",
+      "associated_meals": [
+        "day2_meal2"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_15",
+      "name": "lean beef strips",
+      "quantity": 4,
+      "unit": "oz",
+      "category": "protein",
+      "associated_meals": [
+        "day2_meal3"
+      ],
+      "substitutions": [
+        "chicken"
+      ],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_16",
+      "name": "brown rice (cooked)",
+      "quantity": 2.5,
+      "unit": "cup",
+      "category": "grains",
+      "associated_meals": [
+        "day2_meal3",
+        "day5_meal3",
+        "day7_meal3"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_17",
+      "name": "mixed bell peppers",
+      "quantity": 1,
+      "unit": "cup",
+      "category": "vegetable",
+      "associated_meals": [
+        "day2_meal3"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_18",
+      "name": "canned tuna in water",
+      "quantity": 4,
+      "unit": "oz",
+      "category": "protein",
+      "associated_meals": [
+        "day3_meal2"
+      ],
+      "substitutions": [
+        "canned salmon"
+      ],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_19",
+      "name": "celery",
+      "quantity": 0.5,
+      "unit": "cup",
+      "category": "vegetable",
+      "associated_meals": [
+        "day3_meal2"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_20",
+      "name": "zucchini",
+      "quantity": 1,
+      "unit": "cup",
+      "category": "vegetable",
+      "associated_meals": [
+        "day3_meal3"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_21",
+      "name": "carrots",
+      "quantity": 1,
+      "unit": "cup",
+      "category": "vegetable",
+      "associated_meals": [
+        "day3_meal3"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_22",
+      "name": "apple",
+      "quantity": 2,
+      "unit": "medium",
+      "category": "fruit",
+      "associated_meals": [
+        "day3_meal4",
+        "day6_meal4"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_23",
+      "name": "peanut butter",
+      "quantity": 1,
+      "unit": "tbsp",
+      "category": "nuts & spreads",
+      "associated_meals": [
+        "day3_meal4"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_24",
+      "name": "whole wheat pasta",
+      "quantity": 0.5,
+      "unit": "cup",
+      "category": "grains",
+      "associated_meals": [
+        "day4_meal3"
+      ],
+      "substitutions": [
+        "brown rice noodles"
+      ],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_25",
+      "name": "shrimp",
+      "quantity": 4,
+      "unit": "oz",
+      "category": "protein",
+      "associated_meals": [
+        "day4_meal3"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_26",
+      "name": "marinara sauce",
+      "quantity": 0.5,
+      "unit": "cup",
+      "category": "condiment",
+      "associated_meals": [
+        "day4_meal3"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_27",
+      "name": "ground turkey",
+      "quantity": 4,
+      "unit": "oz",
+      "category": "protein",
+      "associated_meals": [
+        "day5_meal2"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_28",
+      "name": "kidney beans",
+      "quantity": 0.5,
+      "unit": "cup",
+      "category": "legume",
+      "associated_meals": [
+        "day5_meal2"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_29",
+      "name": "tomato sauce",
+      "quantity": 0.5,
+      "unit": "cup",
+      "category": "condiment",
+      "associated_meals": [
+        "day5_meal2"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_30",
+      "name": "tilapia fillet",
+      "quantity": 4,
+      "unit": "oz",
+      "category": "protein",
+      "associated_meals": [
+        "day5_meal3"
+      ],
+      "substitutions": [
+        "cod"
+      ],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_31",
+      "name": "asparagus",
+      "quantity": 1,
+      "unit": "cup",
+      "category": "vegetable",
+      "associated_meals": [
+        "day5_meal3"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_32",
+      "name": "egg whites",
+      "quantity": 4,
+      "unit": "large",
+      "category": "protein",
+      "associated_meals": [
+        "day7_meal2"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_33",
+      "name": "mushrooms",
+      "quantity": 0.5,
+      "unit": "cup",
+      "category": "vegetable",
+      "associated_meals": [
+        "day7_meal2"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    },
+    {
+      "item_id": "grocery_34",
+      "name": "feta cheese",
+      "quantity": 3,
+      "unit": "tbsp",
+      "category": "dairy",
+      "associated_meals": [
+        "day4_meal2",
+        "day7_meal2"
+      ],
+      "substitutions": [],
+      "storage_notes": []
+    }
+  ],
+  "progress_tracker": {
+    "metrics": [
+      {
+        "metric_id": "metric_1",
+        "name": "body weight",
+        "purpose": "track fat loss",
+        "measurement_method": "scale",
+        "frequency": "weekly",
+        "interpretation_guidance": [
+          "Aim for 0.5‑1 lb loss per week"
+        ],
+        "adjustment_triggers": [
+          "Stall >2 weeks → reduce calories or increase activity"
+        ]
+      },
+      {
+        "metric_id": "metric_2",
+        "name": "waist circumference",
+        "purpose": "monitor central fat",
+        "measurement_method": "tape measure at navel",
+        "frequency": "weekly",
+        "interpretation_guidance": [
+          "Decrease indicates fat loss"
+        ],
+        "adjustment_triggers": [
+          "No change after 4 weeks → reassess diet"
+        ]
+      },
+      {
+        "metric_id": "metric_3",
+        "name": "training performance",
+        "purpose": "ensure progressive overload",
+        "measurement_method": "record weights/reps per exercise",
+        "frequency": "each session",
+        "interpretation_guidance": [
+          "Improvement signals adequate recovery"
+        ],
+        "adjustment_triggers": [
+          "Plateau >2 sessions → apply progression rule"
+        ]
+      }
+    ],
+    "weekly_check_in": [
+      {
+        "check_in_id": "checkin_1",
+        "questions": [
+          "Did you hit your calorie target?",
+          "How was energy during workouts?",
+          "Any aches or unusual fatigue?"
+        ],
+        "review_actions": [
+          "Log weight",
+          "Adjust next week's calorie if needed"
+        ],
+        "decision_rules": [
+          "If energy low ≥2 days → add 100 kcal",
+          "If soreness >48 h → insert extra rest day"
+        ]
+      }
+    ]
+  },
+  "lifestyle_habits": [
+    {
+      "habit_id": "habit_1",
+      "category": "sleep",
+      "recommendation": "7‑8 hours per night",
+      "action_steps": [
+        "Set consistent bedtime",
+        "Avoid screens 30 min before sleep"
+      ],
+      "frequency": "daily",
+      "adaptation_notes": []
+    },
+    {
+      "habit_id": "habit_2",
+      "category": "hydration",
+      "recommendation": "2‑3 L water daily",
+      "action_steps": [
+        "Carry reusable bottle",
+        "Drink 250 ml each hour"
+      ],
+      "frequency": "daily",
+      "adaptation_notes": []
+    },
+    {
+      "habit_id": "habit_3",
+      "category": "stress management",
+      "recommendation": "10 min mindfulness",
+      "action_steps": [
+        "Breathing app or journal",
+        "Short walk during breaks"
+      ],
+      "frequency": "daily",
+      "adaptation_notes": []
+    }
+  ],
+  "first_seven_days_checklist": [
+    {
+      "day": 1,
+      "objective": "Kick‑off plan",
+      "action_steps": [
+        "Weigh and record baseline",
+        "Complete Session 1 (Full Body Strength)",
+        "Prepare all meals per Day 1 plan",
+        "Log water intake"
+      ],
+      "estimated_minutes": 120,
+      "completion_criteria": [
+        "Weight logged",
+        "Workout finished",
+        "All meals consumed"
+      ],
+      "notes": []
+    },
+    {
+      "day": 2,
+      "objective": "Establish routine",
+      "action_steps": [
+        "Session 2 (Upper Body Strength)",
+        "Follow Day 2 meals",
+        "Review calories in app"
+      ],
+      "estimated_minutes": 115,
+      "completion_criteria": [
+        "Workout logged",
+        "Calorie total within 1500 ± 100"
+      ],
+      "notes": []
+    },
+    {
+      "day": 3,
+      "objective": "Maintain consistency",
+      "action_steps": [
+        "Session 3 (Lower Body Strength)",
+        "Prepare Day 3 meals",
+        "Walk 10 min after work"
+      ],
+      "estimated_minutes": 115,
+      "completion_criteria": [
+        "Workout completed",
+        "Snack logged"
+      ],
+      "notes": []
+    },
+    {
+      "day": 4,
+      "objective": "Add cardio stimulus",
+      "action_steps": [
+        "Session 4 (HIIT Cardio)",
+        "Follow Day 4 meals",
+        "Stretch 5 min before bed"
+      ],
+      "estimated_minutes": 100,
+      "completion_criteria": [
+        "HIIT session finished",
+        "Meals on target"
+      ],
+      "notes": []
+    },
+    {
+      "day": 5,
+      "objective": "Active recovery",
+      "action_steps": [
+        "Session 5 (Mobility/Yoga)",
+        "Day 5 meal plan",
+        "Light walk 15 min"
+      ],
+      "estimated_minutes": 90,
+      "completion_criteria": [
+        "Mobility routine done",
+        "No missed meals"
+      ],
+      "notes": []
+    },
+    {
+      "day": 6,
+      "objective": "Review week 1",
+      "action_steps": [
+        "Weigh and compare",
+        "Adjust calories if >0.5 lb deviation",
+        "Plan grocery restock"
+      ],
+      "estimated_minutes": 60,
+      "completion_criteria": [
+        "Weight logged",
+        "Adjustment noted"
+      ],
+      "notes": []
+    },
+    {
+      "day": 7,
+      "objective": "Prep for week 2",
+      "action_steps": [
+        "Batch‑cook quinoa and rice",
+        "Prep protein portions",
+        "Set workout schedule for next week"
+      ],
+      "estimated_minutes": 90,
+      "completion_criteria": [
+        "Meal components ready",
+        "Schedule confirmed"
+      ],
+      "notes": []
+    }
+  ],
+  "disclaimers": [
+    "Consult a physician before starting any new exercise or diet program.",
+    "Adjust intensity based on personal comfort and recovery."
+  ],
+  "follow_up_questions": []
+}
